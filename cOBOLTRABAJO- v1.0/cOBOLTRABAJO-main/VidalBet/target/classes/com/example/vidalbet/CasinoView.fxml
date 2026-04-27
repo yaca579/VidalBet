@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #12151B;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vidalbet.CasinoController">
+
+    <HBox alignment="CENTER_LEFT" prefHeight="70.0" spacing="20.0" style="-fx-background-color: #0E1116; -fx-padding: 0 30; -fx-border-color: #2D323E; -fx-border-width: 0 0 1 0;">
+        <Button onAction="#navInici" styleClass="sidebar-button" text="← INICI" style="-fx-text-fill: #E5C04A; -fx-font-weight: bold;" />
+        <Label style="-fx-text-fill: white; -fx-font-size: 20px; -fx-font-weight: bold;" text="CASINO VIDALBET" />
+        <Region HBox.hgrow="ALWAYS" />
+        <Label fx:id="lblSaldoCasino" style="-fx-text-fill: #E5C04A; -fx-font-size: 18px; -fx-font-weight: bold;" text="Saldo: 0.00 €" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="50.0" VBox.vgrow="ALWAYS" style="-fx-padding: 50;">
+
+        <VBox alignment="CENTER" prefWidth="350.0" spacing="25.0" styleClass="dialog-pane" style="-fx-padding: 40; -fx-background-color: #1C2028; -fx-background-radius: 15; -fx-border-color: #E5C04A; -fx-border-radius: 15; -fx-border-width: 1;">
+            <Label style="-fx-text-fill: white; -fx-font-size: 32px; -fx-font-weight: bold;" text="🔴 RULETA ⬛" />
+            <Label alignment="CENTER" prefHeight="60.0" style="-fx-text-fill: #7A808C; -fx-font-size: 14px;" text="Aposta 10€ al Vermell o Negre.&#10;Tens un 50% de probabilitat de doblar!" textAlignment="CENTER" />
+            <Button onAction="#jugarRuleta" styleClass="bet-confirm-button" style="-fx-padding: 15 40; -fx-font-size: 16px; -fx-font-weight: bold;" text="JUGAR 10€" />
+        </VBox>
+
+        <VBox alignment="CENTER" prefWidth="350.0" spacing="25.0" styleClass="dialog-pane" style="-fx-padding: 40; -fx-background-color: #1C2028; -fx-background-radius: 15; -fx-border-color: #E5C04A; -fx-border-radius: 15; -fx-border-width: 1;">
+            <Label style="-fx-text-fill: white; -fx-font-size: 32px; -fx-font-weight: bold;" text="🎰 SLOTS 🎰" />
+            <Label alignment="CENTER" prefHeight="60.0" style="-fx-text-fill: #7A808C; -fx-font-size: 14px;" text="Tira la palanca per 5€.&#10;Aconsegueix el Jackpot de 50€!" textAlignment="CENTER" />
+            <Button onAction="#jugarSlots" styleClass="bet-confirm-button" style="-fx-padding: 15 40; -fx-font-size: 16px; -fx-font-weight: bold;" text="TIRAR 5€" />
+        </VBox>
+
+    </HBox>
+</VBox>
